@@ -44,7 +44,7 @@ public class BoardService {
         return BoardRespDto.from(entity);
     }
 
-    // 그만하고 싶다..
+    // 재밌다. 재밌다. 재밌다.
     public List<BoardRespDto> searchByTitle(String title) {
         List<BoardEntity> entityList = repository.findByTitleContaining(title);
         return entityList.stream().map(BoardRespDto::from).toList();
